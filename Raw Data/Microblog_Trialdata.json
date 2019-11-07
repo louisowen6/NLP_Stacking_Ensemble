@@ -1,0 +1,72 @@
+[
+  {
+    "id": 5540055,
+    "spans": ["Putting on a little $F short"],
+    "cashtag": "$F",
+    "sentiment score": -0.454,
+    "source": "stocktwits"
+  },
+  {
+    "id": 10752226,
+    "spans": ["short some"],
+    "cashtag": "$AAPL",
+    "sentiment score": -0.464,
+    "source": "stocktwits"
+  },
+  {
+    "id": 10920221,
+    "spans": ["buying opportunity"],
+    "cashtag": "$BAC",
+    "sentiment score": 0.445,
+    "source": "stocktwits"
+  },
+  {
+    "id": 12971398,
+    "spans": ["Scaling Up on Long Position"],
+    "cashtag": "$SHOR",
+    "sentiment score": 0.661,
+    "source": "stocktwits"
+  },
+  {
+    "id": 16142438,
+    "spans": ["its time to sell banks"],
+    "cashtag": "$JPM",
+    "sentiment score": -0.763,
+    "source": "stocktwits"
+  },
+  {
+    "id": 14073133,
+    "spans": ["Entering long"],
+    "cashtag": "$LMT",
+    "sentiment score": 0.627,
+    "source": "stocktwits"
+  },
+  {
+    "id": 18479024,
+    "spans": ["picked some up"],
+    "cashtag": "$DNN",
+    "sentiment score": 0.653,
+    "source": "stocktwits"
+  },
+  {
+    "id": 34147106,
+    "spans": ["time to accumulate for a long position", "far more upside than downside"],
+    "cashtag": "$CRK",
+    "sentiment score": 0.668,
+    "source": "stocktwits"
+  },
+  {
+    "id": 719890387314335744,
+    "spans": ["Buying $SBUX on dip"],
+    "cashtag": "$SBUX",
+    "sentiment score": 0.483,
+    "source": "twitter"
+  },
+  {
+    "id": 708668814427348992,
+    "spans": ["is a short below 740", "and is overbought"],
+    "cashtag": "$GOOGL",
+    "sentiment score": -0.480,
+    "source": "twitter"
+  }
+]

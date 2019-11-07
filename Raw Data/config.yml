@@ -1,0 +1,17 @@
+twitter:
+  api: 
+    pause: 5
+    app:
+      key: XoYpIbuaK3yvRtFXJCkv6tYHN
+      secret: SqiW4TpmXj9zhKUjzkjGmcWokx9axpHHmJIrjomc1QEklkWEDf
+      token: 1168332843912593408-TQDrdclN6F42ZroNozl9WMEVy1gQcg
+      token_secret: Ra8EX7jUVEDTWi8497NiUIRWJ1KvubaUBkXDkWXk7ktUO
+stocktwits:
+  api:
+    pause: 9
+    app:
+      key: 0e0490a4b0de40a4
+      secret: 0ef695bb4c50ad69de05ce7b5db21f40968df394
+      code: f5ed26dcd9bbbb8f9929378bbd199cd3d20cf27e
+      token: 42fbdccc3355e23b1dd268f1fd6ebecac3cfc285
+
