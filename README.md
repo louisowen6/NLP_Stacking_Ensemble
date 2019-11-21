@@ -1,4 +1,4 @@
-# Sentiment Analysis in Stock Market using CNN, LSTM, MLP, NLP and Stacking Ensemble
+# Sentiment Analysis in Stock Market using Twitter and Stocktwits Data with CNN, LSTM, MLP, NLP and Stacking Ensemble
 
 ## Background
 
