@@ -21,7 +21,8 @@ Consists of microblog messages focusing on stock market events and assessments f
 
 Some stock market discussion also takes place on the Twitter platform. In order to extend and diversify our data sources, we extract Twitter posts containing company stock symbols (cashtags) 
 
-Data is collected via scraping through official website API. The syntax of scraping is provided by [SemEval][http://alt.qcri.org/semeval2017/task5/]
+### Data Scraping
+Data is collected via scraping through official website API. The syntax of scraping is provided by [SemEval](http://alt.qcri.org/semeval2017/task5/)
 
 
 ## References
