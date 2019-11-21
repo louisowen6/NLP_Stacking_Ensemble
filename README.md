@@ -47,6 +47,22 @@ The tweets cleaning procedure including:
   - Convert elongated word into its basic form: 'Winnn'
   - Convert ordinal words into ordinal number: 'first' is converted to '1st'
 
+After done with the tweets cleaning, there are in total 86 variables created from the cleaned tweets text and from tweets metadata.
+
+You can find the Notebook [here](https://github.com/louisowen6/NLP_Stacking_Ensemble/blob/master/Feature_Engineering_and_Data_Cleaning.ipynb)
+
+### Feature Selection
+
+After doing feature engineering, we have to do some analysis to select which features will be used in the modeling process. The analysis are as follows:
+  - Missing Value Analysis
+  - Constant Variables Analysis
+  - Duplicated Variables Analysis
+  - Correlated Variables Analysis
+ 
+So, from 86 variables created in the feature engineering process we succeed to remove 14 variables.
+
+You can find the Notebook [here](https://github.com/louisowen6/NLP_Stacking_Ensemble/blob/master/Feature_Selection.ipynb)
+
 ## Model Performance Metrics
 
 The metrics used to assess the model's performance is **Cosine Similarity** 
