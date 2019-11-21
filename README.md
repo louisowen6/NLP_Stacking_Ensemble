@@ -82,9 +82,13 @@ There are 4 models created and 1 ensemble model to combine those 4 models.
 
 This model aims to get the information from the 72 manually curated variables. The MLP has 3 hidden layers with tanh activation function both in the hidden layer and output layer. Number of nodes in the first, second, and third layer is 50, 30, 15. Dropout is also used in this model.
 
+You can find the Notebook [here](https://github.com/louisowen6/NLP_Stacking_Ensemble/blob/master/MLP.ipynb)
+
 ### MLP Simple Word Embedding
 
 This model aims to get the information straights from the vector representation of texts. The MLP has 3 hidden layers with tanh activation function in the output layer and ReLu in the hidden layer. Number of nodes in the first, second, and third layer is 50, 25, 10. Dropout is also used in this model.
+
+You can find the Notebook [here](https://github.com/louisowen6/NLP_Stacking_Ensemble/blob/master/MLP.ipynb)
 
 ### Convolutional Neural Network
 
@@ -92,9 +96,21 @@ CNN aims to get the local behaviour within the texts by sliding over 1,2,3,4 wor
 
 The output of this CNN is then integrated with MLP with 2 hidden layers with tanh activation function both in the hidden layer and output layer. Number of nodes in the first and second layer is 10 and 5. Dropout is also used in this MLP.
 
+You can find the Notebook [here](https://github.com/louisowen6/NLP_Stacking_Ensemble/blob/master/CNN_LSTM.ipynb)
+
 ### Long Short-Term Memory
 
+LSTM aims to get the global behaviour within the texts. This model used 2 layers of LSTM which integrated with MLP with 2 hidden layers with tanh activation function in the output layer and ReLu in the hidden layer. Number of nodes in the first and second layer is 50 and 10. Dropout is also used in this model.
 
+You can find the Notebook [here](https://github.com/louisowen6/NLP_Stacking_Ensemble/blob/master/CNN_LSTM.ipynb)
+
+### MLP Stacking Ensemble
+
+Classical ensemble method is done by averaging the output of each model created. However, thish approach will give the same weights for each model created. 
+
+MLP Stacking Ensemble can find the optimum weights for each model created. The MLP has 1 hidden layer with 4 nodes. Activation function in the hidden layer is ReLu, while in the output layer is tanh.
+
+You can find the Notebook [here](https://github.com/louisowen6/NLP_Stacking_Ensemble/blob/master/Ensemble.ipynb)
 
 ## Supporting Files
 
