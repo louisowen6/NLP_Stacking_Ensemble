@@ -1,5 +1,7 @@
 # Sentiment Analysis in Stock Market using Twitter and Stocktwits Data with CNN, LSTM, MLP, NLP and Stacking Ensemble
 
+You can see the powerpoint slides in Bahasa Indonesia [here](https://github.com/louisowen6/NLP_Stacking_Ensemble/PPT.pptx)
+
 ## Background
 
 ### Why?
