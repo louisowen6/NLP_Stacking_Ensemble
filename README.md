@@ -30,9 +30,40 @@ Data is collected via scraping through official website API. The syntax of scrap
 
 You can see the .json scraped data for [Stocktwits](Raw%20Data/Microblog_Trainingdata-stocktwits_full.json) and for [Twitter](Raw%20Data/Microblog_Trainingdata-twitter_full.json)
 
+## Data Preparation
+
+The data provided from the official website are not clean yet and we have to do some feature engineering and feauture selection before jump into the modeling process. 
+
+### Data Cleaning & Feature Engineering 
+
+The Stocktwits and Twitter data are combined into one dataframe before doing data cleaning process. 
+
+The tweets cleaning procedure including:
+  - Remove HTML encoding: '&amp', '$quot', etc
+  - Remove mention tag: '@userid1'
+  - Remove Retweet symbol: 'RT'
+  - Convert all URL into '_url'
+  - Convert abbreviation and slang words into its basic form using [dictionary](https://github.com/louisowen6/NLP_Stacking_Ensemble/blob/master/Supporting_Files/emnlp_dict.txt)
+  - Convert elongated word into its basic form: 'Winnn'
+  - Convert ordinal words into ordinal number: 'first' is converted to '1st'
+
 ## Model Performance Metrics
 
-Metrics used to assess the model's performance is **Cosine Similarity** 
+The metrics used to assess the model's performance is **Cosine Similarity** 
+
+## Model
+
+There are 4 models created and 1 ensemble model to combine those 4 models.
+ - Multi Layer Perceptron Feature Driven
+ - Multi Layer Perceptron Simple Word Embedding
+ - Convolutional Neural Network
+ - Long Short-Term Memory Neural Network
+ - Multi Layer Perceptron Stacking Ensemble
+
+### MLP Feauture Driven
+
+This model aims to get the 
+
 
 ## References
 Inspired from SemEval 2017 Task 5
