@@ -114,6 +114,10 @@ MLP Stacking Ensemble can find the optimum weights for each model created. The M
 
 You can find the Notebook [here](https://github.com/louisowen6/NLP_Stacking_Ensemble/blob/master/Model/Ensemble.ipynb)
 
+## Results
+
+The average cosine similarity of the final model is 0.877 with 0.08 standard deviation
+
 ## Supporting Files
 
 Here are the link to download supporting files used in this project which are not uploaded into the repository due to the large size
