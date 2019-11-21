@@ -49,7 +49,7 @@ The tweets cleaning procedure including:
 
 After done with the tweets cleaning, there are in total 86 variables created from the cleaned tweets text and from tweets metadata.
 
-You can find the Notebook [here](https://github.com/louisowen6/NLP_Stacking_Ensemble/blob/master/Feature_Engineering_and_Data_Cleaning.ipynb)
+You can find the Notebook [here](https://github.com/louisowen6/NLP_Stacking_Ensemble/blob/master/Feature_Engineering_and_Data_Cleaning.ipynb) and [here](https://github.com/louisowen6/NLP_Stacking_Ensemble/blob/master/NER_Prep.ipynb)
 
 ### Feature Selection
 
@@ -62,6 +62,8 @@ After doing feature engineering, we have to do some analysis to select which fea
 So, from 86 variables created in the feature engineering process we succeed to remove 14 variables.
 
 You can find the Notebook [here](https://github.com/louisowen6/NLP_Stacking_Ensemble/blob/master/Feature_Selection.ipynb)
+
+Now, we have 72 variables which will be used in the modeling process.
 
 ## Model Performance Metrics
 
