@@ -82,13 +82,13 @@ There are 4 models created and 1 ensemble model to combine those 4 models.
 
 ### MLP Feature Driven
 
-This model aims to get the information from the 72 manually curated variables. The MLP has 3 hidden layers with tanh activation function both in the hidden layer and output layer. Number of nodes in the first, second, and third layer is 50, 30, 15. Dropout is also used in this model.
+This model aims to get the information from the 55 manually curated variables. The MLP has 3 hidden layers with tanh activation function both in the hidden layer and output layer. Number of nodes in the first, second, and third layer is 50, 30, 15. Dropout is also used in this model.
 
 You can find the Notebook [here](https://github.com/louisowen6/NLP_Stacking_Ensemble/blob/master/Model/MLP.ipynb)
 
 ### MLP Simple Word Embedding
 
-This model aims to get the information straights from the vector representation of texts. The MLP has 3 hidden layers with tanh activation function in the output layer and ReLu in the hidden layer. Number of nodes in the first, second, and third layer is 50, 25, 10. Dropout is also used in this model.
+This model aims to get the information straights from the vector representation of texts. The MLP has 3 hidden layers with tanh activation function in the output layer and ReLu in the hidden layer. Number of nodes in the first, second, and third layer is 30. Dropout is also used in this model.
 
 You can find the Notebook [here](https://github.com/louisowen6/NLP_Stacking_Ensemble/blob/master/Model/MLP.ipynb)
 
@@ -96,7 +96,7 @@ You can find the Notebook [here](https://github.com/louisowen6/NLP_Stacking_Ense
 
 CNN aims to get the local behaviour within the texts by sliding over 1,2,3,4 words at each time. Gaussian Noise with 0.01 variance is used to give noise into the input data. There are 25 filters for each window slide, so in total there are 100 filters with 1 dimension vector output for each filter. Max-pooling is used in each the output of each filter, resulting 100 scalar in total. Then all of the scalar are concatenated into one 100-dimensional vector. 
 
-The output of this CNN is then integrated with MLP with 2 hidden layers with tanh activation function both in the hidden layer and output layer. Number of nodes in the first and second layer is 10 and 5. Dropout is also used in this MLP.
+The output of this CNN is then integrated with MLP with 2 hidden layers with tanh activation function both in the hidden layer and output layer. Number of nodes in the first and second layer is 15. Dropout is also used in this MLP.
 
 You can find the Notebook [here](https://github.com/louisowen6/NLP_Stacking_Ensemble/blob/master/Model/CNN%20LSTM.ipynb)
 
