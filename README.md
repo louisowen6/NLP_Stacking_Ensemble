@@ -51,7 +51,7 @@ The tweets cleaning procedure including:
 
 After done with the tweets cleaning, there are in total 86 variables created from the cleaned tweets text and from tweets metadata.
 
-You can find the Notebook [here](https://github.com/louisowen6/NLP_Stacking_Ensemble/blob/master/Data%20Preparation/Feature_Engineering_and_Data_Cleaning.ipynb) and [here](https://github.com/louisowen6/NLP_Stacking_Ensemble/blob/master/Data%20Preparation/NER_Prep.ipynb)
+You can find the Notebook [here](https://github.com/louisowen6/NLP_Stacking_Ensemble/blob/master/Data%20Preparation/Data%20Preparation.ipynb) and [here](https://github.com/louisowen6/NLP_Stacking_Ensemble/blob/master/Data%20Preparation/NER_Prep.ipynb)
 
 ### Feature Selection
 
@@ -98,13 +98,13 @@ CNN aims to get the local behaviour within the texts by sliding over 1,2,3,4 wor
 
 The output of this CNN is then integrated with MLP with 2 hidden layers with tanh activation function both in the hidden layer and output layer. Number of nodes in the first and second layer is 10 and 5. Dropout is also used in this MLP.
 
-You can find the Notebook [here](https://github.com/louisowen6/NLP_Stacking_Ensemble/blob/master/Model/CNN_LSTM.ipynb)
+You can find the Notebook [here](https://github.com/louisowen6/NLP_Stacking_Ensemble/blob/master/Model/CNN%20LSTM.ipynb)
 
 ### Long Short-Term Memory
 
 LSTM aims to get the global behaviour within the texts. This model used 2 layers of LSTM which integrated with MLP with 2 hidden layers with tanh activation function in the output layer and ReLu in the hidden layer. Number of nodes in the first and second layer is 50 and 10. Dropout is also used in this model.
 
-You can find the Notebook [here](https://github.com/louisowen6/NLP_Stacking_Ensemble/blob/master/Model/CNN_LSTM.ipynb)
+You can find the Notebook [here](https://github.com/louisowen6/NLP_Stacking_Ensemble/blob/master/Model/CNN%20LSTM.ipynb)
 
 ### MLP Stacking Ensemble
 
@@ -116,7 +116,14 @@ You can find the Notebook [here](https://github.com/louisowen6/NLP_Stacking_Ense
 
 ## Results
 
-The average cosine similarity of the final model is 0.877 with 0.08 standard deviation
+The average cosine similarity of the final model is 0.877 with 0.08 standard deviation. 
+
+You can download the trained model in keras format .h5:
+  - [MLP Feature Driven](https://github.com/louisowen6/NLP_Stacking_Ensemble/blob/master/Model/model_MLP.h5)
+  - [MLP Simple Word Embedding](https://github.com/louisowen6/NLP_Stacking_Ensemble/blob/master/Model/model_MLP_W2V_Sentence_Vector.h5)
+  - [CNN](https://github.com/louisowen6/NLP_Stacking_Ensemble/blob/master/Model/model_CNN_W2V.h5)
+  - [LSTM](https://github.com/louisowen6/NLP_Stacking_Ensemble/blob/master/Model/model_LSTM_W2V.h5)
+  - [Stacked Ensemble](https://github.com/louisowen6/NLP_Stacking_Ensemble/blob/master/Model/model_Ensemble.h5)
 
 ## Supporting Files
 
