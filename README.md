@@ -67,6 +67,10 @@ You can find the Notebook [here](https://github.com/louisowen6/NLP_Stacking_Ense
 
 Now, we have 55 variables extracted from texts which will be used in the modeling process.
 
+### Data Split
+
+The full data is splitted into 3 parts, namely train, validation, and test data. The MLP Feature Driven Model, MLP Simple Word Embedding, CNN, and LSTM were drilled on the data train using 10 times the Cross Validation. Those four trained model will be used to predict both validation and test data. So there are 4 prediction results for each validation and test data. Then 2 new tables with 5 columns are created, each for data validation and data testing. Those columns consist of the 4 predicted results from the four trained models plus the actual sentiment score for the output column. The new table created from validation data will be the train data for the Stacked Ensemble model and the new table created from the test data will be the validation data.
+
 ## Model Performance Metrics
 
 The metrics used to assess the model's performance is **Cosine Similarity** 
@@ -116,7 +120,7 @@ You can find the Notebook [here](https://github.com/louisowen6/NLP_Stacking_Ense
 
 ## Results
 
-The average cosine similarity of the final model is 0.877 with 0.08 standard deviation. 
+The cosine similarity of the final model is 0.662. 
 
 You can download the trained model in keras format .h5:
   - [MLP Feature Driven](https://github.com/louisowen6/NLP_Stacking_Ensemble/blob/master/Model/model_MLP.h5)
