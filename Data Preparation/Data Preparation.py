@@ -75,7 +75,7 @@ nrc.index=hs['Hashtag']
 NRC_hashtag_dict=dict(nrc)
 
 #Sentiwordnet Sentiment Lexicon
-sentiwordnet=pd.read_table(PATH_ROOT+'Supporting_Files/'+'SentiWordNet/'+'senti_wordnet.txt',names=('POS','ID','PosScore','NegScore','SynsetTerms','Gloss'),encoding='latin-1')
+sentiwordnet=pd.read_table(PATH_ROOT+'Supporting_Files/'+'SentiWordNet/'+'SentiWordNet_3.0.0.txt',names=('POS','ID','PosScore','NegScore','SynsetTerms','Gloss'),encoding='latin-1')
 sentiwordnet=sentiwordnet[pd.isnull(sentiwordnet.POS)==False]
 sentiwordnet['score']=sentiwordnet['PosScore']-sentiwordnet['NegScore']
 
@@ -131,6 +131,13 @@ def rebuild_data(microblog_train_twitter_full,microblog_train_stocktwits_full):
 
 	return(concat_df)
 
+def tokenize(sentence):
+	'''
+	tokenize input sentence into token
+	'''
+	token_list=nltk.regexp_tokenize(sentence, pattern=r"\s|[\.,;]\D", gaps=True)
+	return(token_list)
+
 def clean_data(concat_df):
 
 	print("==================== Cleaning Data ====================")
@@ -176,13 +183,6 @@ def clean_data(concat_df):
 			return True
 		except ValueError:
 			return False
-
-	def tokenize(sentence):
-		'''
-		tokenize input sentence into token
-		'''
-		token_list=nltk.regexp_tokenize(sentence, pattern=r"\s|[\.,;]\D", gaps=True)
-		return(token_list)
 
 	def sentences_cleaner(sentence):
 		'''
@@ -751,19 +751,19 @@ def main():
 
 	engineered_df.to_csv(PATH_ROOT+'df_prepared.csv')
 
-	rf_1_gram_df=rf_ngram_dict_maker(concat_df,gram=1)
+	rf_1_gram_df=rf_ngram_dict_maker(clean_df,gram=1)
 	rf_1_gram_df.to_csv(PATH_ROOT+'rf_1_gram_df.csv')
 	
-	rf_2_gram_df=rf_ngram_dict_maker(concat_df,gram=2)
+	rf_2_gram_df=rf_ngram_dict_maker(clean_df,gram=2)
 	rf_2_gram_df.to_csv(PATH_ROOT+'rf_2_gram_df.csv')
 	
-	rf_3_gram_df=rf_ngram_dict_maker(concat_df,gram=3)
+	rf_3_gram_df=rf_ngram_dict_maker(clean_df,gram=3)
 	rf_3_gram_df.to_csv(PATH_ROOT+'rf_3_gram_df.csv')
 	
-	rf_4_gram_df=rf_ngram_dict_maker(concat_df,gram=4)
+	rf_4_gram_df=rf_ngram_dict_maker(clean_df,gram=4)
 	rf_4_gram_df.to_csv(PATH_ROOT+'rf_4_gram_df.csv')
 	
-	PMI_df=PMI_dict_maker(concat_df)
+	PMI_df=PMI_dict_maker(clean_df)
 	PMI_df.to_csv(PATH_ROOT+'PMI_df.csv')
 
 if __name__ == '__main__':
