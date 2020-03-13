@@ -2,6 +2,10 @@
 
 You can see the powerpoint slides in Bahasa Indonesia [here](https://github.com/louisowen6/NLP_Stacking_Ensemble/blob/master/PPT.pptx)
 
+## Requirements
+
+Standfordnlp, bs4, contractions, inflect, nltk, textblob, string, pandas, numpy, gensim, sklearn
+
 ## Background
 
 ### Why?
