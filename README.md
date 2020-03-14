@@ -6,7 +6,7 @@ You can see the powerpoint slides in Bahasa Indonesia [here](https://github.com/
 
 torch>=1.0.0, standfordnlp, bs4, contractions, inflect, nltk, textblob, string, pandas, numpy, gensim, sklearn
 
-For Windows User: run in anaconda prompt
+For Windows User: run python script in anaconda prompt
 
 ## Background
 
@@ -57,7 +57,7 @@ The tweets cleaning procedure including:
 
 After done with the tweets cleaning, there are in total 61 variables created from the cleaned tweets text and from tweets metadata.
 
-You can find the Notebook [here](https://github.com/louisowen6/NLP_Stacking_Ensemble/blob/master/Data%20Preparation/Data%20Preparation.ipynb) and [here](https://github.com/louisowen6/NLP_Stacking_Ensemble/blob/master/Data%20Preparation/NER_Prep.ipynb)
+You can find the python script [here](https://github.com/louisowen6/NLP_Stacking_Ensemble/blob/master/Data%20Preparation/data_cleaning_fe.py)
 
 ### Feature Selection
 
