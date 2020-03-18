@@ -6,7 +6,6 @@ You can see the powerpoint slides in Bahasa Indonesia [here](https://github.com/
 
 torch>=1.0.0, standfordnlp, bs4, contractions, inflect, nltk, textblob, string, pandas, numpy, gensim, sklearn
 
-For Windows User: run python script in anaconda prompt
 
 ## Background
 
@@ -59,6 +58,8 @@ After done with the tweets cleaning, there are in total 61 variables created fro
 
 You can find the python script [here](https://github.com/louisowen6/NLP_Stacking_Ensemble/blob/master/Data%20Preparation/data_cleaning_fe.py)
 
+For Windows User: run python script in anaconda prompt
+
 ### Feature Selection
 
 After doing feature engineering, we have to do some analysis to select which features will be used in the modeling process. The analysis are as follows:
@@ -75,7 +76,7 @@ Now, we have 55 variables extracted from texts which will be used in the modelin
 
 ### Data Split
 
-The full data is splitted into 3 parts, namely train, validation, and test data. The MLP Feature Driven Model, MLP Simple Word Embedding, CNN, and LSTM were drilled on the data train using 10 times the Cross Validation. Those four trained model will be used to predict both validation and test data. So there are 4 prediction results for each validation and test data. Then 2 new tables with 5 columns are created, each for data validation and data testing. Those columns consist of the 4 predicted results from the four trained models plus the actual sentiment score for the output column. The new table created from validation data will be the train data for the Stacked Ensemble model and the new table created from the test data will be the validation data.
+The full data is separated into three parts, namely train, validation, and test data. Each of the MLP Feature Driven Model, MLP Simple Word Embedding, CNN, and LSTM is trained on the train data using 10-folds cross-validation. Those four trained model will be used to predict both validation and test data. Thus, there are 4 prediction results for each validation and test data. Then two new tables with five columns are created, each for validation and test data. Those columns consist of four predicted results from the four trained models along with the actual sentiment score. The newly created table from validation data will be exploited as the train data for the Stacked Ensemble model and the newly created table from the test data will be exploited as the validation data.
 
 ## Model Performance Metrics
 
