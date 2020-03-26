@@ -4,7 +4,7 @@ You can see the powerpoint slides in Bahasa Indonesia [here](https://github.com/
 
 ## Requirements
 
-torch>=1.0.0, standfordnlp, bs4, contractions, inflect, nltk, textblob, string, pandas, numpy, gensim, sklearn
+tensorflow, standfordnlp, bs4, contractions, inflect, nltk, textblob, string, pandas, numpy, gensim, sklearn, matplotlib, seaborn
 
 
 ## Background
