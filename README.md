@@ -148,3 +148,7 @@ Mengxiao Jiang, et al. 2017. Ecnu at semeval-2017 task 5: An ensemble of regress
 
 Deepanway Ghosal, et al. 2017. Iitp at semeval-2017 task 5: An ensemble of deep learning and feature based models for financial sentiment analysis. In Proceedings of the 11th International Workshop on Semantic Evaluation (SemEval-2017). Association for Computational Linguistics, Vancouver, Canada. http://alt.qcri.org/semeval2017/.
 
+## License
+
+The underlying code of this project is licensed under the [MIT license](https://github.com/louisowen6/NLP_Stacking_Ensemble/blob/master/LICENSE).
+
