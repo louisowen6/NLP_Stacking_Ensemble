@@ -140,7 +140,6 @@ You can download the trained model in keras format .h5:
 
 Here are the link to download supporting files used in this project which are not uploaded into the repository due to the large size
   - [Google Word2Vec Pre-Trained Model](https://drive.google.com/open?id=16A169DxZ-h9qU0i6rXCoSh_djkBWnd9V)
-  - [GloVe Twitter Pre-Trained Model](https://drive.google.com/open?id=1p1IN9O_fpSQzPTFB5Y8CCOMXPIPU1WGV)
 
 ## Citation
 
