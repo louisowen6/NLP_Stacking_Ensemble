@@ -141,12 +141,22 @@ Here are the link to download supporting files used in this project which are no
   - [Google Word2Vec Pre-Trained Model](https://drive.google.com/open?id=16A169DxZ-h9qU0i6rXCoSh_djkBWnd9V)
   - [GloVe Twitter Pre-Trained Model](https://drive.google.com/open?id=1p1IN9O_fpSQzPTFB5Y8CCOMXPIPU1WGV)
 
-## References
-Inspired from SemEval 2017 Task 5
+## Citation
 
-Mengxiao Jiang, et al. 2017. Ecnu at semeval-2017 task 5: An ensemble of regression algorithms with effective features for fine-grained sentiment analysis in financial domain. In Proceedings of the 11th International Workshop on Semantic Evaluation (SemEval-2017). Association for Computational Linguistics, Vancouver, Canada. http://alt.qcri.org/semeval2017/.
+If you find the paper and the code helpful, please cite us.
 
-Deepanway Ghosal, et al. 2017. Iitp at semeval-2017 task 5: An ensemble of deep learning and feature based models for financial sentiment analysis. In Proceedings of the 11th International Workshop on Semantic Evaluation (SemEval-2017). Association for Computational Linguistics, Vancouver, Canada. http://alt.qcri.org/semeval2017/.
+```
+@INPROCEEDINGS{Owen2008:SENN,
+AUTHOR="Louis Owen and Finny Oktariani",
+TITLE="{SENN:} Stock Ensemble-based Neural Network for Stock Market Prediction
+using Historical Stock Data and Sentiment Analysis",
+BOOKTITLE="2020 International Conference on Data Science and Its Applications (ICoDSA)
+(ICoDSA 2020)",
+DAYS=4,
+MONTH=aug,
+YEAR=2020
+}
+```
 
 ## License
 
