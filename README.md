@@ -1,5 +1,6 @@
 # Sentiment Analysis in Stock Market using Twitter and Stocktwits Data with CNN, LSTM, MLP, NLP and Stacking Ensemble
 
+This repo is [part of code implementation](https://github.com/louisowen6/SENN) of the accepted paper on The International Conference on Data Science and Its Applications (ICoDSA) 2020, entitled "SENN: Stock Ensemble-based Neural Network for Stock Market Prediction using Historical Stock Data and Sentiment Analysis", written by [Louis Owen](http://louisowen6.github.io/) and [Finny Oktariani](https://www.itb.ac.id/staff/view/finny-oktariani-twd).
 
 ## Requirements
 
